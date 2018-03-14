@@ -4,9 +4,9 @@ Single page, website that delivers a different LOLCat-themed message to a user d
 (HTML/CSS/JavaScript)
 
 
-### Live Demo
-[Demo](https://mccleary.github.io/lolcat-clock)
+### Click here for [Demo](https://mccleary.github.io/lolcat-clock)
 
 
-### View LOLCat Image Here
+
+### LOLCat Screenshot
 ![LOLCat Image](img/lolcat.png)
