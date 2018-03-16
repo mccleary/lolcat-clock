@@ -8,5 +8,5 @@ Single page, website that delivers a different LOLCat-themed message to a user d
 
 
 
-### LOLCat Screenshot
-![LOLCat Image](img/lolcat.png)
+<!-- ### LOLCat Screenshot
+![LOLCat Image](img/lolcat.png) -->
