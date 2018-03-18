@@ -1,4 +1,16 @@
 body {
   background-color: lightgreen;
   text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: fantasy;
+}
+
+.button button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10%;
 }
