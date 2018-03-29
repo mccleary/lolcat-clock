@@ -1,4 +1,4 @@
-var time = new Date().getHours(); // NATIVE JAVASCRIPT CODE: represents current hour (1-24)
+var time = new Date().getHours();  //represents current hour (1-24)
 var messageText;
 var noon = 12;
 var evening = 18; // 6PM
