@@ -2,10 +2,11 @@ var time = new Date().getHours(); // NATIVE JAVASCRIPT CODE: represents current 
 var messageText;
 var noon = 12;
 var evening = 18; // 6PM
-var wakeupTime = 6 // 6AM
-var lunchTime = 12 // 12PM
-var partyTime = 17 // 5PM
+var wakeupTime = 9; // 9AM
+var lunchTime = 12; // 12PM
+var partyTime = 17; // 5PM
 var napTime = lunchTime + 2; // 2PM
+var message = document.getElementById("timeEvent");
 
 if (time == partyTime) {
 	messageText = "IZ PARTEE TIME!";
@@ -22,4 +23,6 @@ if (time == partyTime) {
 } else {
 	messageText  = "Good Afternoon!";
 }
-console.log(messageText);
+// console.log(messageText);
+
+message.innerText = messageText;
