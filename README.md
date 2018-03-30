@@ -7,6 +7,5 @@ Single page, website that delivers a different LOLCat-themed message to a user d
 ### Click here for [Demo](https://mccleary.github.io/lolcat-clock)
 
 
-
 ### LOLCat Screenshot
 ![LOLCat Image](img/lolcat_clock.png)
