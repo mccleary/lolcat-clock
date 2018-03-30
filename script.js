@@ -5,7 +5,11 @@ var wakeupTime = 9; // 9AM
 var lunchTime = 12; // 12PM
 var partyTime = 17; // 5PM
 var napTime = lunchTime + 2; // 2PM
-
+var isPartyTime = false;
+var partyTimeButton = document.getElementById("partyTimeButton");
+var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
+var lunchTimeSelector = document.getElementById("lunchTimeSelector");
+var napTimeSelector = document.getElementById("napTimeSelector");
 
 // Setting up clock to increment once every second on its own, also changes messages and pictures with clock time change
 var updateClock = function() {
@@ -87,3 +91,46 @@ updateClock();
 
 var oneSecond = 1000;
 setInterval(updateClock, oneSecond);
+
+// party Time Button change text, color and image
+var partyEvent = function() {
+
+   if (isPartyTime === false) {
+      isPartyTime = true;
+      time = partyTime;
+      // changes button to read "Party TIME"
+      partyTimeButton.innerText = "PARTY TIME!";
+      // change color of the button to blue
+      partyTimeButton.style.backgroundColor = "magenta";
+   }
+   else {
+      isPartyTime = false;
+      time = new Date().getHours();
+      // changes button to read "PARTY OVER!"
+      partyTimeButton.innerText = "PARTY OVER!";
+      // change color of the button to black
+      partyTimeButton.style.backgroundColor = "#222";
+   }
+};
+
+
+// event listener for wakeUpTime Selector to change time
+var wakeUpEvent = function() {
+  wakeUpTime = wakeUpTimeSelector.value;
+};
+
+// event listener for lunchTime Selector
+var lunchEvent = function() {
+  lunchTime = lunchTimeSelector.value;
+};
+
+// event listener for napTime Selector
+var napEvent = function() {
+  napTime = napTimeSelector.value;
+};
+
+// event listeners
+partyTimeButton.addEventListener("click", partyEvent);
+wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
+lunchTimeSelector.addEventListener("change", lunchEvent);
+napTimeSelector.addEventListener("change", napTimeEvent);
