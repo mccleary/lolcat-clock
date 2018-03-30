@@ -9,4 +9,4 @@ Single page, website that delivers a different LOLCat-themed message to a user d
 
 
 ### LOLCat Screenshot
-![LOLCat Image](/img/lolcat_clock.png)
+![LOLCat Image](img/lolcat_clock.png)
